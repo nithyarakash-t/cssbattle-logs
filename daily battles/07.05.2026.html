@@ -1,0 +1,41 @@
+<!-- 1-  100% -->
+
+<div class="container">
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    place-items: center;
+    place-content: center;
+    background: #3157B4;
+  }
+  .container {
+    width: 220px;
+    height: 220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  .leaf {
+    --rad: 3.125rem;
+    border: 10px solid #060F55;
+    background: #84BE8D;
+    &:nth-child(1) {
+      border-bottom-right-radius: var(--rad);
+    }
+    &:nth-child(2) {
+      border-bottom-left-radius: var(--rad);
+    }
+    &:nth-child(3) {
+      border-top-right-radius: var(--rad);
+    }
+    &:nth-child(4) {
+      border-top-left-radius: var(--rad);
+    }
+  }
+</style>

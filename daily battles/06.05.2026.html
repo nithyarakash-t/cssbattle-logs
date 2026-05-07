@@ -1,0 +1,52 @@
+<!-- 1 - 100%  -->
+
+<div class="square">
+  <div></div>
+</div>
+<div class="square">
+  <div></div>
+</div>
+<div class="overlay"></div>
+<style>
+   body {
+     position: relative;
+     margin: 0;
+     height: 100%;
+     background: #4A9A86;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     padding: 0 3.125rem;
+   }
+  .square {
+    width: 100px;
+    height: 100px;
+    background: #F3EAD2;
+    position: relative;
+
+    > div {
+      position: absolute;
+      height: 70px;
+      aspect-ratio: 1/1;
+      background: #173889;
+      border-radius: 50%;
+      inset: auto -35px -35px auto;
+    }
+
+    &:nth-child(2) {
+      margin-left: auto;
+
+      > div {
+        inset: -35px auto auto -35px;
+      }
+    }
+  }
+  .overlay {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    translate: -50% -50%;
+    background: #4A9A86;
+    height: 100px;
+    aspect-ratio: 1/1;
+  }
+</style>
