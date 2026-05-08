@@ -1,0 +1,32 @@
+<div class="circle"></div>
+<div class="cup"></div>
+<div class="circle"></div>
+<style>
+  body {
+    margin: 0;
+    background: #DF914B;
+    place-content: center;
+    place-items: center;
+    position: relative;
+  }
+  .cup {
+    position: relative;
+    width: 150px;
+    height: 170px;
+    background: #eee;
+    border-radius: 0 0 1.25rem 1.25rem;
+  }
+  .circle {
+    position: absolute;
+    inset: 85px 0 0 80px;
+    height: 70px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: radial-gradient(#DF914B 0 30%, #eee 30%);
+    /* background: red; */
+
+    &:nth-child(3) {
+      left: 250px;
+    }
+  }
+</style>
