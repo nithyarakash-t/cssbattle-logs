@@ -1,0 +1,53 @@
+<div class="circles"></div>
+<!-- <div class="joint-clip"></div> -->
+<div class="joint"></div>
+<style>
+  body {
+    position: relative;
+    background: #EEF8F9;
+    margin: 0;
+    place-content: center;
+    place-items: center;
+  }
+  .circles {
+    position: absolute;
+    inset: 85px auto auto 50%;
+    translate: -50% 0;
+    height: 70px;
+    width: 240px;
+    background:
+    radial-gradient(circle 35px at 35px center, #A6CE39 0 100%, transparent 100%),
+    radial-gradient(circle 35px at calc(100% - 35px) center, #A6CE39 100%, transparent 100%);
+  background-repeat: no-repeat;
+  }
+  /* .joint-clip {
+    margin-top: 35px;
+    width: 200px;
+    height: 125px;
+    background: #0088CA;
+    clip-path: polygon(0 100%, 0 0, 30px 0, 30px 95px, 170px 95px, 170px 0, 100% 0, 100% 100%);
+  } */
+  .joint {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    margin-top: 130px;
+    background: #0088CA;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset: auto auto 100% 0;
+      width: 30px;
+      height: 95px;
+      background: #0088CA;
+      border-radius: 30px 30px 0 0 ;
+    }
+    &::after {
+      inset: auto 0 100% auto;
+    }
+  }
+</style>
+
+<!-- Ideal : use path / clip-path for blue - FAILED and gradient repeat for green _ DONE-->
