@@ -1,0 +1,23 @@
+<div class="curtains-child"></div>
+<div class="curtains-child -w"></div>
+<div class="curtains-child"></div>
+<div class="curtains-child -w"></div>
+<div class="curtains-child"></div>
+<style>
+  body {
+    background: #4f77ff;
+    display: grid;
+    padding: 40px;
+    gap: 20px;
+    grid-template-columns: 60px 20px 60px 20px 60px;
+  }
+.curtains-child {
+        height: 200px;
+        background: #1038bf;
+        &.-w {
+            background: #fff;
+        }
+    }
+</style>
+
+<!-- target - do this with just gradient   -->
