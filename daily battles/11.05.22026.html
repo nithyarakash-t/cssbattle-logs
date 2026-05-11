@@ -1,0 +1,29 @@
+<div class="semi"></div>
+<div class="circle"></div>
+
+<style>
+  body {
+    margin: 0;
+  }
+  div {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
+ .circle {
+   translate: -150px -50%;
+   height: 180px;
+   border: 20px solid #000;
+   box-sizing: border-box;
+ }
+ .semi {
+   height: 180px;
+   translate: -30px -125px;
+   /*
+   background: #B53733;
+   clip-path: polygon(0 100% , 0 50%, 100% 50%, 100% 100%); */
+   background: linear-gradient(180deg, transparent 0 50%, #B53733 50%);
+ }
+</style>
