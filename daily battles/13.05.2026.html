@@ -1,0 +1,33 @@
+<div class="bars"></div>
+<div class="mid"></div>
+<div class="bars -flip"></div>
+<style>
+  body {
+    background: #6592CF;
+    position: relative;
+  }
+  div {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    translate: -50% -50%;
+  }
+  .bars {
+    width: 360px;
+    height: 200px;
+    background: #dd6b4d;
+    background:
+    linear-gradient(#eee)      0 0 / 30px 100% no-repeat,
+    linear-gradient(#173889) 40px 30px / 30px 170px no-repeat,
+   linear-gradient(#eee) 80px 60px / 30px 140px no-repeat;
+
+    &.-flip {
+      scale: -1 1;
+    }
+  }
+  .mid {
+    top: calc(50% + 30px);
+    height: 40px;
+    width: 140px;
+    background: linear-gradient(to right, #eee 0 40px, #6592CF 40px 100px, #173889 100px);
+  }
+</style>
