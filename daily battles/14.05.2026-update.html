@@ -1,0 +1,25 @@
+<!-- Do this without the after -->
+<div></div>
+<style>
+  body {
+    background: #1A4341;
+    place-items: center;
+    place-content: center;
+  }
+  div {
+    width: 200px;
+    height: 200px;
+    background: #EBE77E;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 50% auto auto 50%;
+      translate: -50% -50%;
+      height: 140px;
+      width: 140px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #84BE8D 0 50%, #1A4341 50%);
+    }
+  }
+</style>
