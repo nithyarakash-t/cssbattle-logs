@@ -1,0 +1,25 @@
+<div></div>
+<div></div>
+<div></div>
+<style>
+  body {
+    padding: 12px 0;
+    background: #1F1446;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  div {
+    width: 150px;
+    height: 80px;
+    background: #FFCA00;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0 35px 30px 35px;
+      background: #1F1446;
+    }
+  }
+</style>
