@@ -1,0 +1,32 @@
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<style>
+  body {
+    margin: 0;
+    border: 20px solid #594C94;
+    background: #EEEDED;
+  }
+  div {
+   position: absolute;
+   background: #594C94;
+   inset: 50% auto auto 50%;
+   translate: -50% -50%;
+   height: 90px;
+   width: 180px;
+   border-radius: 100vw 100vw 0 0;
+    &:nth-child(1) {
+      transform: translate(0, -65px) scale(-1);
+    }
+    &:nth-child(2) {
+      transform: translate(115px, 0) rotate(270deg);
+    }
+    &:nth-child(3) {
+      transform: translate(0, 65px)
+    }
+    &:nth-child(4) {
+      transform: translate(-115px, 0) rotate(90deg);
+    }
+  }
+</style>
