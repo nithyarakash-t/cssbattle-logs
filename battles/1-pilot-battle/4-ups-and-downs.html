@@ -1,0 +1,21 @@
+<div></div>
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #62306D;
+    place-items: center;
+    place-content: center;
+    display: flex;
+  }
+  div {
+    width: 100px;
+    height: 100px;
+    background: #F7EC7D;
+    border-radius: 50px 50px 0 0;
+    transform: translateY(50px) scale(-1);
+    &:nth-child(2) {
+      transform: translateY(-50px)
+    }
+  }
+</style>
