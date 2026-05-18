@@ -1,0 +1,30 @@
+<div></div>
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #0B2429;
+    place-content: center;
+    place-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    rotate: -45deg;
+  }
+  div {
+    width: 120px;
+    height: 120px;
+    background: #F3AC3C;
+    border-radius: 50% 50% 50% 0;
+    rotate: 225deg;
+    &:nth-child(1) {
+      border-radius: 50%;
+      translate: -35px 0;
+    }
+    &:nth-child(2) {
+      background: #998235;
+    }
+    &:nth-child(3) {
+      translate: 35px 0
+    }
+  }
+</style>
