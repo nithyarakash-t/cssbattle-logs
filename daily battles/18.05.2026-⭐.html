@@ -1,0 +1,36 @@
+<!-- repeating radial with repeat-x replacing last 3 radial grad from the below example  -->
+
+<div></div>
+<style>
+  body {
+    background: #9FF0FB;
+    place-content: center;
+    place-items: center;
+  }
+div {
+  width: 340px;
+  height: 220px;
+  background:
+    linear-gradient(#3F8BA6) 30px 35px / 280px 30px no-repeat,
+    linear-gradient(#3F8BA6) 50% 30px / 30px 160px no-repeat,
+    radial-gradient(circle 50px at center 170px, #3F8BA6 0 100%, transparent 100%) center / 100% 100% no-repeat,
+    radial-gradient(circle 50px at 50px 50px, #3F8BA6 0 100%, transparent 100%) 0 0 / 120px 100px repeat-x;
+}
+</style>
+
+
+----------------------------
+
+<div></div>
+<style>
+  body {
+    background: #9FF0FB;
+    place-content: center;
+    place-items: center;
+  }
+  div {
+    width: 340px;
+    height: 220px;
+    background: linear-gradient(#3F8BA6) 30px 35px / 280px 30px no-repeat, linear-gradient(#3F8BA6) 50% 30px / 30px 160px no-repeat, radial-gradient(circle 50px at center 170px, #3F8BA6 0 100%, transparent 100%), radial-gradient(circle 50px at 50px 50px, #3F8BA6 0 100%, transparent 100%), radial-gradient(circle 50px at 170px 50px, #3F8BA6 0 100%, transparent 100%), radial-gradient(circle 50px at 290px 50px, #3F8BA6 0 100%, transparent 100%);
+  }
+</style>
