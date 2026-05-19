@@ -1,0 +1,22 @@
+<div></div>
+<div></div>
+<style>
+  body {
+    background: radial-gradient(circle at center, #84271C 0 25px, #191210 25px 50px, #ECA03D 50px 70px, #191210 70px);
+  }
+  div {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    translate: -50% -50%;
+    height: 100px;
+    aspect-ratio: 1/1;
+    background: red;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #191210 0 30px, #ECA03D 30px);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    transform: translate(100px, 0);
+    &:nth-child(2) {
+      transform: translate(-100px, 0) scale(-1);
+    }
+  }
+</style>
