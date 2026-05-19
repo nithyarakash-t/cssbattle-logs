@@ -1,0 +1,43 @@
+<!-- wanted to use mix blend mode- failed, couldve just used 1 graqdient on body -->
+
+<div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<style>
+  body {
+    background: #EFEADE;
+    place-items: center;
+    place-content: center;
+    > div {
+      height: 120px;
+      position: relative;
+      > div {
+        position: absolute;
+        height: 80px;
+        inset: -40px auto auto -40px;
+        background: linear-gradient(#594F7C) 40px 40px / 40px 40px no-repeat, #B29DF7;
+        
+        &:nth-child(2) {
+          left: 80px;
+          rotate: 90deg;
+        }
+        &:nth-child(3) {
+          top: 80px;
+          rotate: 270deg;
+        }
+        &:nth-child(4) {
+          top: 80px;
+          left: 80px;
+          rotate: 180deg;
+        }
+      }
+    }
+}
+div {
+  aspect-ratio: 1/1;
+  background-color: #B29DF7;
+}
+</style>
