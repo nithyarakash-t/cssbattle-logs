@@ -52,7 +52,9 @@
 
 <!-- simplified  -->
 
-<!-- <div></div>
+<!--
+
+<div></div>
 <div></div>
 <div></div>
 <div></div>
@@ -68,6 +70,18 @@
    translate: -50% -50%;
    background: var(--_bg);
    height: 30px;
+
+   &:nth-child(1),
+   &:nth-child(3) {
+     width: 100px;
+     border-top-left-radius: 10px;
+   }
+
+   &:nth-child(2),
+   &:nth-child(4) {
+     width: 50px;
+     border-top-right-radius: 4px;
+   }
    
    &:nth-child(3),
    &:nth-child(4) {
@@ -75,29 +89,25 @@
    }
 
    &:nth-child(1) {
-     width: 100px;
-     transform: rotate(-45deg) translate(10px, -50px);
-     border-top-left-radius: 10px;
+     rotate: -45deg;
+     transform: translate(9px, -51px);
    }
    &:nth-child(2) {
-     width: 50px;
-     transform: rotate(45deg) translate(-10px, 25px);
-     border-top-right-radius: 10px;
+     rotate: 45deg;
+     transform: translate(-11px, 26px);
    }
    &:nth-child(3) {
-     width: 100px;
-     transform: rotate(135deg) translate(10px, -50px);
-     border-top-left-radius: 10px;
+     rotate: 135deg;
+     transform: translate(9px, -49px);
    }
    &:nth-child(4) {
-     width: 50px;
-     transform: rotate(225deg) translate(-10px, 25px);
-     border-top-right-radius: 10px;
+     rotate: 225deg;
+     transform: translate(-9px, 26px);
    }
-
-   
  }
-</style> -->
+</style>
+
+-->
 
 
 
