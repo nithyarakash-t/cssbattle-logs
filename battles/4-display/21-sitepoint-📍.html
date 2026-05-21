@@ -1,0 +1,227 @@
+<!-- 99.9%  -->
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #222;
+    position: relative;
+  }
+ div {
+   --_bg: #F2994A;
+   position: absolute;
+   inset: 50% auto auto 50%;
+   translate: -50% -50%;
+   background: var(--_bg);
+   height: 30px;
+
+   &:nth-child(1),
+   &:nth-child(3) {
+     width: 100px;
+     transform: translate(10px, -50px);
+     border-top-left-radius: 10px;
+   }
+
+   &:nth-child(2),
+   &:nth-child(4) {
+     width: 50px;
+     transform: translate(-10px, 25px);
+     border-top-right-radius: 10px;
+   }
+   
+   &:nth-child(3),
+   &:nth-child(4) {
+     --_bg: #2D9CDB;
+   }
+
+   &:nth-child(1) {
+     rotate: -45deg;
+   }
+   &:nth-child(2) {
+     rotate: 45deg;
+   }
+   &:nth-child(3) {
+     rotate: 135deg;
+   }
+   &:nth-child(4) {
+     rotate: 225deg;
+   }
+ }
+</style>
+
+<!-- medium solution 100% but missing a border radius  -->
+<!-- 
+<div class="container">
+  <div class="bar orange"></div>
+  <div class="bar blue"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background: #222;
+  }
+  .bar {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 5px;
+  }
+  .orange {
+    transform: translate(-62px, -64px) rotate(-45deg);
+    border-left: 30px solid #F2994A;
+    border-top: 30px solid #F2994A;
+  }
+  .blue {
+    transform: translate(-40px, -16px) rotate(135deg);
+    border-left: 30px solid #2D9CDB;
+    border-top: 30px solid #2D9CDB;
+  }
+</style>
+
+-->
+
+<!-- cssbattlesolution 100% -->
+
+<!--
+
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #222;
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+  }
+  div {
+    width: 80px;
+    height: 30px;
+    rotate: 45deg;
+    position: relative;
+    &:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 90px;
+    position: relative;
+  }
+    &:nth-child(1) {
+      background: #F2994A;
+      left: 3px;
+      border-radius: 0px 5px 0px 10px;
+      &:before {
+        background: #F2994A;
+        bottom: 70px;
+      }
+    }
+    &:nth-child(2) {
+      background: #2D9CDB;
+      right: 5px;
+      bottom: 1px;
+      border-radius: 0px 10px 0px 5px;
+      &:before {
+        background: #2D9CDB;
+        left: 50px;
+        top: 10px;
+      }
+    }
+  }
+</style>
+
+-->
+
+<!-- 99.9% simplified  -->
+
+<!--
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #222;
+    position: relative;
+  }
+ div {
+   --_bg: #F2994A;
+   position: absolute;
+   inset: 50% auto auto 50%;
+   translate: -50% -50%;
+   background: var(--_bg);
+   height: 30px;
+
+   &:nth-child(1),
+   &:nth-child(3) {
+     width: 100px;
+     border-top-left-radius: 10px;
+   }
+
+   &:nth-child(2),
+   &:nth-child(4) {
+     width: 50px;
+     border-top-right-radius: 4px;
+   }
+   
+   &:nth-child(3),
+   &:nth-child(4) {
+     --_bg: #2D9CDB;
+   }
+
+   &:nth-child(1) {
+     rotate: -45deg;
+     transform: translate(9px, -51px);
+   }
+   &:nth-child(2) {
+     rotate: 45deg;
+     transform: translate(-11px, 26px);
+   }
+   &:nth-child(3) {
+     rotate: 135deg;
+     transform: translate(9px, -49px);
+   }
+   &:nth-child(4) {
+     rotate: 225deg;
+     transform: translate(-9px, 26px);
+   }
+ }
+</style>
+
+-->
+
+
+
+<!-- Incorrect solution but got the logo  -->
+
+<!-- <div></div>
+<div></div>
+<style>
+  body {
+    background: #222;
+    position: relative;
+  }
+  div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #F2994A;
+    rotate: 45deg;
+    inset: 50% auto auto 50%;
+    translate: -50% -50%;
+    transform: translate(-16px, -9px);
+    border-radius: 0 70px 0 10px;
+    corner-shape: round notch round round;
+    &:nth-child(2) {
+      background: #2D9CDB;
+      rotate: 225deg;
+      transform: translate(-34px, -9px);
+    }
+  }
+</style> -->

@@ -1,0 +1,65 @@
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #62306D;
+    place-items: center;
+    place-content: center;
+    display: flex;
+    gap: 2.5rem;
+  }
+  div {
+    --_bg: #AA445F;
+    --_y: -25px;
+    width: 100px;
+    aspect-ratio: 1/1.5;
+    background: radial-gradient(circle 50px at 50% 100px, #F7EC7D 0 100%, transparent) no-repeat, var(--_bg);
+    border-radius: 100px;
+    translate: 0 var(--_y);
+    &:nth-child(2) {
+      --_bg: #E38F66;
+      --_y: 25px;
+      rotate: 180deg;
+    }
+  }
+</style>
+
+
+<!-- <div></div>
+<div></div>
+<style>
+  body {
+    background: #62306D;
+    place-items: center;
+    place-content: center;
+    display: flex;
+    gap: 2.5rem;
+  }
+  div {
+    position: relative;
+    width: 100px;
+    aspect-ratio: 1/1;
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: #F7EC7D;
+      border-radius: 50%;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      inset: auto 0 0 0;
+      width: 100px;
+      height: 150px;
+      background: #AA445F;
+      border-radius: 100px;
+    }
+    &:nth-child(2) {
+      rotate: 180deg;
+      &::before {
+        background: #E38F66;
+      }
+    }
+  }
+</style> -->

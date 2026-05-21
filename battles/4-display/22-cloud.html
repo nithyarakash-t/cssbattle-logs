@@ -1,0 +1,32 @@
+<div></div>
+<style>
+  body {
+    background: #F5D6B4;
+    place-content: center;
+    place-items: center;
+  }
+  div {
+    --_bg: #D86F45;
+    width: 100px;
+    height: 100px;
+    background: var(--_bg);
+    width: 200px;
+    height: 50px;
+    translate: 0 40px;
+    border-radius: 0 40px 40px 80px;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 0 auto;
+      height: 100px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background: var(--_bg);
+      translate: -20px -30px;
+    }
+    &::before {
+      translate: -100px 0;
+    }
+  }
+</style>

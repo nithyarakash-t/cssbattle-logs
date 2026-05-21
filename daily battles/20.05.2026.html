@@ -1,0 +1,27 @@
+<div></div>
+<style>
+  body {
+    background: #30383F;
+    place-items: center;
+    place-content: center;
+  }
+  div {
+    position: relative;
+    width: 260px;
+    height: 200px;
+    background: linear-gradient(#30383F) center / 160px 50% no-repeat, linear-gradient(#30383F) center 0 / 60px 50px no-repeat, linear-gradient(#30383F) center 150px / 60px 50px no-repeat, #F4DCBF;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 50% 100% auto auto;
+      translate: 0 -50%;
+      background: linear-gradient(to bottom, #F4DCBF 0 25px, #30383F 25px 75px, #F4DCBF 75px);
+      height: 100px;
+      width: 50px;
+    }
+    &::after {
+      inset: 50% auto auto 100%;
+    }
+  }
+</style>
