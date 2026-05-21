@@ -1,3 +1,102 @@
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #222;
+    position: relative;
+  }
+ div {
+   --_bg: #F2994A;
+   position: absolute;
+   inset: 50% auto auto 50%;
+   translate: -50% -50%;
+   background: var(--_bg);
+   height: 30px;
+
+   &:nth-child(1),
+   &:nth-child(3) {
+     width: 100px;
+     transform: translate(10px, -50px);
+     border-top-left-radius: 10px;
+   }
+
+   &:nth-child(2),
+   &:nth-child(4) {
+     width: 50px;
+     transform: translate(-10px, 25px);
+   }
+   
+   &:nth-child(3),
+   &:nth-child(4) {
+     --_bg: #2D9CDB;
+   }
+
+   &:nth-child(1) {
+     rotate: -45deg;
+   }
+   &:nth-child(2) {
+     rotate: 45deg;
+   }
+   &:nth-child(3) {
+     rotate: 135deg;
+   }
+   &:nth-child(4) {
+     rotate: 225deg;
+   }
+ }
+</style>
+
+<!-- simplified  -->
+
+<!-- <div></div>
+<div></div>
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #222;
+    position: relative;
+  }
+ div {
+   --_bg: #F2994A;
+   position: absolute;
+   inset: 50% auto auto 50%;
+   translate: -50% -50%;
+   background: var(--_bg);
+   height: 30px;
+   
+   &:nth-child(3),
+   &:nth-child(4) {
+     --_bg: #2D9CDB;
+   }
+
+   &:nth-child(1) {
+     width: 100px;
+     transform: rotate(-45deg) translate(10px, -50px);
+     border-top-left-radius: 10px;
+   }
+   &:nth-child(2) {
+     width: 50px;
+     transform: rotate(45deg) translate(-10px, 25px);
+   }
+   &:nth-child(3) {
+     width: 100px;
+     transform: rotate(135deg) translate(10px, -50px);
+     border-top-left-radius: 10px;
+   }
+   &:nth-child(4) {
+     width: 50px;
+     transform: rotate(225deg) translate(-10px, 25px);
+   }
+
+   
+ }
+</style> -->
+
+
+
 <!-- Incorrect solution but got the logo  -->
 
 <!-- <div></div>
