@@ -1,0 +1,32 @@
+<div></div>
+<div></div>
+<style>
+  body {
+    display: flex;
+    background: #09042A;
+    place-content: center;
+    place-items: center;  
+  }
+  div {
+    position: relative;
+    --_t: 25px;
+    height: 150px;
+    aspect-ratio: 1/1;
+    background: #7B3F61;
+    border-radius: 50%;
+    translate: var(--_t) 0;
+    overflow: hidden;
+    &:nth-child(2) {
+      --_t: -25px;
+      background: #E78481;
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        background: #09042A;
+        translate: -100px 0;
+      }
+    }
+  }
+</style>
