@@ -1,0 +1,32 @@
+<div></div>
+<div></div>
+<style>
+  body {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    background: #3157B4;
+  }
+  div {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(#060F55) 100% 100% / 40px 36px no-repeat, #84BE8D;
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 100% 0 auto auto;
+      translate: 0 0px;
+      width: 220px;
+      height: 16px;
+      background: #060F55;
+    }
+    &:nth-child(1) {
+      translate: 10px -54px;
+    }
+    &:nth-child(2) {
+      translate: -10px 54px;
+      rotate: 180deg;
+    }
+  }
+</style>
