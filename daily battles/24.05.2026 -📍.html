@@ -1,0 +1,49 @@
+<div><p></p></div>
+<p></p>
+<style>
+  body {
+    background: #2F5A76;
+    place-content: center;
+    place-items: end;
+    > p {
+      position: absolute;
+      inset: 0 auto 0 0;
+      background: #2F5A76;
+      width: 135px;
+    }
+  }
+  div {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle at center, #2F5A76 0 80px, #E8AD6D 80px) no-repeat;
+    border-radius: 50%;
+    translate: 3px 0;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 50px;
+      border-radius:50%;
+      background: #2F5A76;
+    }
+    &::after {
+      content: '';
+      border-radius: 200px 50px;
+      background: #E8AD6D;
+      translate: -60px 0;
+      rotate: -45deg;
+    }
+
+    p {
+      margin: 0;
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, #2F5A76 0 80px, #E8AD6D 80px) no-repeat;
+      border-radius: 50%;
+      translate: -130px 0;
+    }
+    
+  }
+</style>
