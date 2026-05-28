@@ -1,0 +1,25 @@
+<div></div>
+<style>
+  body {
+    background: radial-gradient(circle closest-side, #64DFE3 0 100%, transparent) 50% 215px / 200px 200px no-repeat, radial-gradient(circle closest-side, #64DFE3 0 100%, transparent) 305px 120px / 60px 60px no-repeat, radial-gradient(circle closest-side, #64DFE3 0 100%, transparent) 35px 120px / 60px 60px no-repeat, #534848;
+  }
+
+  div {
+    position: absolute;
+    inset: 95px auto auto 70px;
+    width: 260px;
+    height: 110px;
+    background: #64DFE3;
+    border-radius: 40px;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 50% auto auto 50%;
+      translate: -50% -50%;
+      width: 170px;
+      height: 80px;
+      background: radial-gradient(circle closest-side, #fff 0 100%, transparent) 10px 50% / 60px 60px no-repeat, radial-gradient(circle closest-side, #fff 0 100%, transparent) 100px 50% / 60px 60px no-repeat, #31696B;
+      border-radius: 40px;
+    }
+  }
+</style>
