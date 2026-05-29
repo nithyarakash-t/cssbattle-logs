@@ -1,0 +1,36 @@
+<div></div>
+<style>
+  * {
+    box-sizing:  border-box;
+  }
+  body {
+    background: #CF596A;
+    place-content: center;
+    place-items: center;
+  }
+  div {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border: 40px solid #F3EAD2;
+    overflow: hidden;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0px;
+      border: 40px solid #F3EAD2;
+      rotate: 45deg;
+      translate: 0 53.5px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0 auto auto 50%;
+      translate: -50% 102px;
+      width: 100px;
+      aspect-ratio: 1/1;
+      background: #CF596A;
+      rotate: 45deg;
+    }
+  }
+</style>
