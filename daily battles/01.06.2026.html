@@ -1,0 +1,31 @@
+<div></div>
+<style>
+body {
+  background: #FEF9CE;
+  place-items: center;
+  place-content: center;
+}
+  div {
+    position: relative;
+    height: 160px;
+    width: 165px;
+    background: radial-gradient(circle closest-side, #FEF9CE 0 100%, transparent) center center/ 100px 100px no-repeat, #D19F37;
+    corner-shape: scoop;
+    border-radius: 52px;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 50% auto auto 50%;
+      translate: -50% -50%;
+      height: 60px;
+      aspect-ratio: 1/1;
+      transform: translateX(-80px);
+      border-radius: 50%;
+      background: #D19F37;
+    }
+    &::after {
+      transform: translateX(80px);
+    }
+  }
+</style>
