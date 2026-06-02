@@ -1,0 +1,30 @@
+<div></div>
+<div></div>
+<style>
+  body {
+    background: linear-gradient(#48BF7D) center center / 40px 240px no-repeat, #2D3464;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+  }
+  div {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background: #ECDFEA;
+    border-radius: 20px 0 0 20px;
+    &:nth-child(2) {
+      margin-top: 10px;
+      margin-bottom: 70px;
+      scale: -1 1;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0 0 0 auto;
+      width: 40px;
+      background: #2D3464;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 100% 50%)
+    }
+  }
+</style>

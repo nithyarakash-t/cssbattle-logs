@@ -1,0 +1,43 @@
+<p></p>
+<p></p>
+<div></div>
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #F5D6B4;
+    display: flex;
+    place-content: center;
+    place-items: center;
+  }
+  div {
+    width: 100px;
+    aspect-ratio: 1/1;
+    background: radial-gradient(circle, #F5D6B4 0 30px, #dd6b4d 30px) no-repeat;
+    border-radius: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+
+    &:nth-child(3) {
+      rotate: 180deg;
+      translate: 20px;
+    }
+    &:nth-child(5) {
+      rotate: 180deg;
+      translate: -20px;
+    }
+  }
+  p {
+    position: absolute;
+    margin: 0;
+    height: 20px;
+    aspect-ratio: 1/1;
+    background: #D86F45;
+    border-radius: 50%;
+    &:nth-child(1) {
+      translate: -120px 0;
+    }
+    &:nth-child(2) {
+      translate: 120px 0;
+    }
+  }
+</style>
