@@ -1,0 +1,30 @@
+<div></div>
+<style>
+  body {
+    background: #1A4341;
+    place-content: center;
+    place-items: center;
+  }
+  div {
+    position: relative;
+    width: 150px;
+    height: 180px;
+    background: repeating-linear-gradient(to bottom, #F3AC3C 0 20px, #1A4341 20px 40px);
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 50% auto auto 50%;
+      translate: -50% -50%;
+      background: #1A4341;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      height: 320px;
+      transform: translateX(-210px);
+    }
+    &::after {
+      transform: translateX(210px);
+    }
+  }
+</style>
