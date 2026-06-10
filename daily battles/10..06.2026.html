@@ -1,0 +1,20 @@
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #4C4C6B;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 40px;
+  }
+  div {
+    width: 140px;
+    height: 200px;
+    background: linear-gradient(#4C4C6B) 0 center / 200px 30px no-repeat, linear-gradient(#4C4C6B) center 0 / 30px 160px no-repeat, #FAE29E;
+    border-radius: 70px 70px 0 0;
+    &:nth-child(2) {
+      transform: scaleY(-1);
+    }
+  }
+</style>
