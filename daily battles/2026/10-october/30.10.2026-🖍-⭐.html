@@ -1,0 +1,39 @@
+<div class="c"></div>
+<div class="a"><div></div></div>
+<style>
+  body {
+    margin: 0;
+    background: #CBCC58;
+    .a {
+      height: 140px;
+      width: 60px;
+      position: absolute;
+      inset: 50% auto auto 50%;
+      translate: -50% -50%;
+      background: #CBCC58;
+      display: grid;
+      place-content: center;
+      place-items: center;
+      div {
+        height: 40px;
+        aspect-ratio: 1/1;
+        background: #394257;
+      }
+    }
+  }
+  .c {
+    width: 200vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #394257;
+    translate: -200px 150px;
+    position: absolute;
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 60px;
+      background: #CBCC58;
+      border-radius: 50%;
+    }
+  }
+</style>
