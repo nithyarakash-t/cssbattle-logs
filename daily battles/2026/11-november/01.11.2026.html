@@ -1,0 +1,32 @@
+<!-- 99.9 % - need to optimize the first border rad  -->
+
+<div></div>
+<div></div>
+<style>
+  body {
+    background: #6D4630;
+  }
+  div {
+    position: absolute;
+    inset: 50%;
+    translate: 0 -50%;
+    height: 160px;
+    width: 40px;
+    background: #fff;
+    border-radius: 20px 0 0 20px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 120px;
+      top: 50%;
+      translate: 10px -50%;
+      background: linear-gradient(#fff) 0px center / 20px 20px no-repeat, #6D4630;
+      border-radius: 20px 0 0 20px;
+    }
+    &:nth-child(2) {
+      translate: -100% -50%;
+      transform: scaleX(-1);
+    }
+  }
+</style>
